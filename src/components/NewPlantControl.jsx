@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import NewPlant from "./NewPlant";
 class NewPlantControl extends React.Component {
 
   constructor(props) {
