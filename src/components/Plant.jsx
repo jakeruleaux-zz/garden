@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Moment from "moment";
+import Water from "./Water";
 
 function PLant(props){
   return (
@@ -8,6 +9,7 @@ function PLant(props){
       <h3>{props.plantname} - {props.type} - {props.cost}</h3>
       <p><em>{props.water}</em></p>
       <p>{props.timeSinceWatered}</p>
+      <Water/>
       <hr/>
     </div>
   );
