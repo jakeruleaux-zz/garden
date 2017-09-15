@@ -8,15 +8,28 @@ class Water extends React.Component {
   constructor(props) {
     super(props);
     this.addWater = this.addWater.bind(this);
+    this.tilWater = this.tilWater.bind(this);
     this.state = {
-      water: 0,
+      water: [],
+      moreWater: [],
     }
   }
 
   addWater() {
     var newWater = new Date().toLocaleString();
-    console.log(newWater);
     this.setState({water: newWater});
+  }
+
+  tilWater() {
+    var timeToWater = new Date().toLocaleTimeString();
+    console.log(timeToWater);
+    this.setState({moreWater: timeToWater});
+
+  }
+
+  componentDidMount() {
+    this.moreWater = setInterval(() =>
+    this.tilWater(), 1000 );
 
   }
 
@@ -24,8 +37,8 @@ class Water extends React.Component {
     return (
       <div>
         <button onClick={this.addWater}>Water!</button>
-        <p><em>Time since water: </em>{this.state.water}</p>
-
+        <p><em>Last watered at: </em>{this.state.water}</p>
+        <p>{this.state.moreWater}</p>
       </div>
     )
 

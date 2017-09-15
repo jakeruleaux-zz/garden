@@ -15,21 +15,18 @@ class Garden extends React.Component {
     this.updatePlantTimeSinceWatered = this.updatePlantTimeSinceWatered.bind(this);
   }
 
-  componentWillMount() {
-  }
-
   componentDidMount() {
-    this.timeSinceWateredTest = setInterval(() =>
-    this.updatePlantTimeSinceWatered(),
-    5000
-    );
-  }
+      this.timeSinceWateredTest = setInterval(() =>
+      this.updatePlantTimeSinceWatered(),
+      5000
+      );
+    }
 
   addNewPlantToList(newPlant) {
     var newMasterPlantList = this.state.masterPlantList.slice();
     newMasterPlantList.push(newPlant);
     this.setState({masterPlantList: newMasterPlantList});
-  }
+    }
 
   updatePlantTimeSinceWatered() {
     let newMasterPlantList = this.state.masterPlantList.slice();
@@ -42,7 +39,9 @@ class Garden extends React.Component {
   render() {
     return (
       <div>
+        <br></br>
         <NewPlantControl onNewPlantCreation= {this.addNewPlantToList}/>
+        <br></br>
         <PlantList plantList = {this.state.masterPlantList}/>
       </div>
     );
