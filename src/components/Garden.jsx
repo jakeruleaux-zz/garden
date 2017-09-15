@@ -15,6 +15,9 @@ class Garden extends React.Component {
     this.updatePlantTimeSinceWatered = this.updatePlantTimeSinceWatered.bind(this);
   }
 
+  componentWillMount() {
+  }
+
   componentDidMount() {
     this.timeSinceWateredTest = setInterval(() =>
     this.updatePlantTimeSinceWatered(),

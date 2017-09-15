@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Moment from "moment";
 
 
 class Water extends React.Component {
@@ -8,21 +9,30 @@ class Water extends React.Component {
     super(props);
     this.addWater = this.addWater.bind(this);
     this.state = {
-      like: 0,
+      water: 0,
     }
   }
 
+  componentDidMount() {
+    this.life = setInterval(() =>
+    this.addWater(), 1000 );
+
+}
+
+
   addWater() {
-    var newWater = this.state.like + 1;
-    this.setState({like: newWater});
-    alert(`Hello, you've pressed the button`);
+    var newWater = new Date().toLocaleTimeString();
+    console.log(newWater);
+    this.setState({water: newWater});
+
   }
 
   render() {
   return (
     <div>
         <button onClick={this.addWater}>Water!</button>
-        <p><em>Waters: </em>{this.state.like}</p>
+        <p><em>Time since water: </em>{this.state.water}</p>
+
     </div>
   )
 
