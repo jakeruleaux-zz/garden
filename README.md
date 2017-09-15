@@ -8,6 +8,16 @@
 
 This App allows user to enter a new plant into inventory with details of plant name, plant type, cost and watering instructions.
 
+## Specs
+
+
+
+1.  * Input: User will be able to enter plant name, type of plant, cost, and select watering frequency.
+  * Output: Inputted data will be displayed per entry.
+
+2. * Input: User can click button simulating watering time.
+  * Output: Timestamp of the instance of the button click.
+
 ## Setup/Installation Requirements
 
 * Open Github site in your browser and copy: https://github.com/jakeruleaux/garden
