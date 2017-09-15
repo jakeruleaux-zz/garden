@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from  "prop-types";
 import NewPlantControl from "./NewPlantControl";
+import PlantList from "./PlantList";
 
 class Garden extends React.Component {
 
@@ -23,6 +24,7 @@ class Garden extends React.Component {
     return (
       <div>
         <NewPlantControl onNewPlantCreation= {this.addNewPlantToList}/>
+        <PlantList plantList = {this.state.masterPlantList}/>
       </div>
     );
   }
