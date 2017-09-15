@@ -2,8 +2,18 @@ import React from "react";
 
 
 function About(){
+
+  var aboutStyles = {
+    backgroundColor: "#ecf0f1",
+    fontFamily: "Times New Roman",
+    border: "1px grey solid",
+    padding: "10px",
+    paddingTop: "20px"
+
+  }
+
   return (
-    <div>
+    <div style={aboutStyles}>
     <h2>About Our Plants</h2>
     <p>Florem ipsum sneezeweed sticky catchfly flowering onion spurge scarlet plume radnor lily. Petal flame tip mum, hyacinth. Daisy prairie gentian cotton-grass sweet sultan canterbury bells fuchsia. Bell heather scottish dock ulster mary. Snowdrop bee orchid, lavender heather.
 

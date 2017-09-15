@@ -6,7 +6,6 @@ function PlantList(props){
 
   return (
     <div>
-      <hr/>
       {props.plantList.map((plant, index) =>
         <Plant plantname={plant.plantname}
           type={plant.type}

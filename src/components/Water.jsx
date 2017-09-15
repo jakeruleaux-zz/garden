@@ -13,24 +13,21 @@ class Water extends React.Component {
     }
   }
 
-
-
-
   addWater() {
-    var newWater = new Date().toDateString();
+    var newWater = new Date().toLocaleString();
     console.log(newWater);
     this.setState({water: newWater});
 
   }
 
   render() {
-  return (
-    <div>
+    return (
+      <div>
         <button onClick={this.addWater}>Water!</button>
         <p><em>Time since water: </em>{this.state.water}</p>
 
-    </div>
-  )
+      </div>
+    )
 
   }
 }
