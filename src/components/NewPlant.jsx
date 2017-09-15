@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import GardenModel from "../models/GardenModel.js"
 
 class NewPlant extends React.Component{
 
@@ -11,7 +12,7 @@ class NewPlant extends React.Component{
   handleNewPlantFormSubmission(event) {
     event.preventDefault()
     const { _plantname, _type, _water, _cost} = this.refs;
-    var newPlant = new Plant( _plantname.value, _type.value, _water.value, _cost.value);
+    var newPlant = new GardenModel( _plantname.value, _type.value, _water.value, _cost.value);
     this.props.onNewPlantCreation(newPlant);
     _plantname.value = "";
     _type.value = "";

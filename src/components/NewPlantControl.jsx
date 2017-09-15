@@ -5,7 +5,7 @@ import NewPlant from "./NewPlant";
 class NewPlantControl extends React.Component {
 
   constructor(props) {
-    super(props
+    super(props);
     this.showForm = this.showForm.bind(this);
     this.hideForm = this.hideForm.bind(this);
     this.state = {formVisibleOnPage: false};
