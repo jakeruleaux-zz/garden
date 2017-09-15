@@ -12,6 +12,7 @@ function PlantList(props){
           type={plant.type}
           cost={plant.cost}
           water={plant.water}
+          timeSinceWatered={plant.timeSinceWatered}
           key={index}/>
       )}
     </div>

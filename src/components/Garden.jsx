@@ -12,12 +12,28 @@ class Garden extends React.Component {
     };
 
     this.addNewPlantToList = this.addNewPlantToList.bind(this);
+    this.updatePlantTimeSinceWatered = this.updatePlantTimeSinceWatered.bind(this);
+  }
+
+  componentDidMount() {
+    this.timeSinceWateredTest = setInterval(() =>
+    this.updatePlantTimeSinceWatered(),
+    5000
+    );
   }
 
   addNewPlantToList(newPlant) {
     var newMasterPlantList = this.state.masterPlantList.slice();
     newMasterPlantList.push(newPlant);
     this.setState({masterPlantList: newMasterPlantList});
+  }
+
+  updatePlantTimeSinceWatered() {
+    let newMasterPlantList = this.state.masterPlantList.slice();
+    newMasterPlantList.forEach((plant) =>
+    plant.setTimeSinceWatered()
+    );
+    this.setState({masterPlantList: newMasterPlantList})
   }
 
   render() {

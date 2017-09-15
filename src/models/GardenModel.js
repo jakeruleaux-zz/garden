@@ -7,7 +7,7 @@ class GardenModel {
     this.water = water;
     this.cost = cost;
     this.timeWatered = new Moment();
-    this.timeSinceWatered = this.setTimeSinceWatered();
+    this.timeSinceWatered = "a few seconds";
   }
 
   setTimeSinceWatered() {
