@@ -13,15 +13,11 @@ class Water extends React.Component {
     }
   }
 
-  componentDidMount() {
-    this.life = setInterval(() =>
-    this.addWater(), 1000 );
 
-}
 
 
   addWater() {
-    var newWater = new Date().toLocaleTimeString();
+    var newWater = new Date().toDateString();
     console.log(newWater);
     this.setState({water: newWater});
 
