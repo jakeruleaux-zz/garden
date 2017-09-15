@@ -13,10 +13,10 @@ This App allows user to enter a new plant into inventory with details of plant n
 
 
 1.  * Input: User will be able to enter plant name, type of plant, cost, and select watering frequency.
-  * Output: Inputted data will be displayed per entry.
+    * Output: Inputted data will be displayed per entry.
 
 2. * Input: User can click button simulating watering time.
-  * Output: Timestamp of the instance of the button click.
+    * Output: Timestamp of the instance of the button click.
 
 ## Setup/Installation Requirements
 

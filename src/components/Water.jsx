@@ -22,7 +22,6 @@ class Water extends React.Component {
 
   tilWater() {
     var timeToWater = new Date().toLocaleTimeString();
-    console.log(timeToWater);
     this.setState({moreWater: timeToWater});
 
   }
@@ -38,7 +37,6 @@ class Water extends React.Component {
       <div>
         <button onClick={this.addWater}>Water!</button>
         <p><em>Last watered at: </em>{this.state.water}</p>
-        <p>{this.state.moreWater}</p>
       </div>
     )
 
