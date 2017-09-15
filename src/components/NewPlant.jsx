@@ -35,11 +35,12 @@ class NewPlant extends React.Component{
             type="text"
             id="type"
             placeholder="type"/>
-          <input
-            ref="_water"
-            type="text"
-            id="water"
-            placeholder="water"/>
+          <label>Water</label>
+          <select ref="_water">
+            <option value="daily">Once a day</option>
+            <option value="weekly">Once a week</option>
+            <option value="monthly">Once a month</option>
+          </select>
           <input
             ref="_cost"
             type="number"
