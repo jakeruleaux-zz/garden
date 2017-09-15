@@ -8,7 +8,7 @@ function About(){
     fontFamily: "Times New Roman",
     border: "1px grey solid",
     padding: "10px",
-    paddingTop: "20px"
+  
 
   }
 

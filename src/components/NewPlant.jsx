@@ -42,7 +42,10 @@ class NewPlant extends React.Component{
             placeholder="water"/>
           <input
             ref="_cost"
-            type="text"
+            type="number"
+            min="0.00"
+            max="10000.00"
+            step="0.01"
             id="cost"
             placeholder="cost"/>
           <button type="submit">Add</button>
