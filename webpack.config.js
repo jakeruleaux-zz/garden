@@ -58,3 +58,5 @@ module.exports = {
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ],
+
+};
