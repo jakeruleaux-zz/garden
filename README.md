@@ -20,13 +20,23 @@ This App allows user to enter a new plant into inventory with details of plant n
 
 ## Setup/Installation Requirements
 
+### Requirements
+
+
+- [Webpack and Babel](https://www.learnhowtoprogram.com/react/react-fundamentals/building-an-environment)
+- [Webpack Server](https://www.learnhowtoprogram.com/react/react-fundamentals/building-an-environment-development-server-hot-module-replacement)
+- [EsLint](https://www.learnhowtoprogram.com/react/react-fundamentals/building-an-environment-linting)
+
+### Setup
+
 * Open Github site in your browser and copy: https://github.com/jakeruleaux/garden
 * Open Terminal on your computer and follow these steps:
   * `$ cd desktop`
   * `$ git clone <paste repository-url>`
   * `$ cd garden`
   * `$ npm install`
-
+  * $ npm run start
+  * navigate to 'localhost:8080' in browser
 
 
 ## Known Bugs
